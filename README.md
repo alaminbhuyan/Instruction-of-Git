@@ -113,7 +113,10 @@ You can also use directory wildcard and directory and subdirectory wildcard
 
   Ex: git add **/*.js
 ```
-
+If you want unstag from staged then run
+```bash
+git restore --staged "file_name"
+```
 ## git commit command
 
 If you want to commit for particular change to track run

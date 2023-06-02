@@ -299,3 +299,23 @@ If you want to see git remote link then run
 ```bash
    git remote -v
 ```
+## Go back to previous commit
+```bash
+   git git checkout commit_hash_id
+```
+## git --pretty=format command
+
+In Git, you can use the --pretty=format option to specify the output format for various Git commands, such as git log or git show. This option allows you to customize the output and display the information in a specific format.
+
+Here are a few commonly used placeholders that you can include in the format string:
+```bash
+	%H: Commit hash (full SHA-1)
+	%h: Abbreviated commit hash
+	%an: Author name
+	%ae: Author email
+	%ad: Author date (format respects the --date option)
+	%s: Subject
+```
+```bash
+	git log --pretty=format:"%h - %an, %ad : %s"
+```

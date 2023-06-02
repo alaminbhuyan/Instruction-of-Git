@@ -1,6 +1,7 @@
 
 # Learn basic to intermediate Git
 
+![App Screenshot](https://github.com/alaminbhuyan/Instruction-of-Git/blob/main/Images/img.png)
 
 ## Generating SSH key for git-hub: (Best way to follow the git-hub SSH key generating process)
 

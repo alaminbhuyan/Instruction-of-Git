@@ -2,9 +2,7 @@
 # Learn basic to intermediate Git
 
 
-
-
-## Generating SSH key for git-hub: ( Best way to follow the git-hub SSH key generating process )
+## Generating SSH key for git-hub: (Best way to follow the git-hub SSH key generating process)
 
 - At first, open "git besh" command prompt.
 
@@ -143,3 +141,6 @@ If you want to see all the commit that you have done till in short way then run.
 ```bash
   git log --oneline
 ```
+## Screenshots
+
+![App Screenshot]()

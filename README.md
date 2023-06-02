@@ -239,5 +239,5 @@ If we want to see last commit for all the branchs than run
 If we want to connect a branch with master branch or one branch to another branch than run
 
 ```bash
-  git merge brance name
+  git merge brance_name
 ```

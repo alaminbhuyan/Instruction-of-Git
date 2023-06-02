@@ -144,3 +144,53 @@ If you want to see all the commit that you have done till in short way then run.
 ## Screenshots
 
 ![App Screenshot]()
+
+## git diff command
+
+Shows the differences between the current state of your files and the last commit.
+
+
+If you want to see all the commit that you have done till then run.
+
+```bash
+  git diff
+```
+
+For particular file
+
+```bash
+  git diff file_name
+```
+
+If we want to see the new add data after (add .) command than run
+
+```bash
+  git diff --staged [ Risk ]
+```
+
+If we want compare two commit than run
+
+```bash
+  git diff hash_id_of_first_commit hash_id_of_second_commit
+```
+
+## git diff command
+
+If we want to see the all changes under a commit than run
+
+```bash
+  git show hash_id
+```
+
+## git delete or remove files and folder
+
+To delete or remove file thne run
+
+```bash
+  rm -r file_name
+```
+To delete or remove folder thne run
+
+```bash
+  rm -r folder_name
+```

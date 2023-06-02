@@ -197,3 +197,47 @@ To delete or remove folder thne run
 ```bash
   rm -r folder_name
 ```
+## git branch command
+
+To create a branch
+
+```bash
+  git branch branch_name
+```
+To see all the branch
+
+```bash
+  git branch
+```
+To go one branch to another branch
+
+```bash
+  git checkout branch_name
+```
+
+To create a branch and go that branch at once run
+
+```bash
+  git checkout -b branch_name
+```
+To delete a branch run
+
+```bash
+  git branch -D branch_name
+```
+
+To delete a branch run
+
+```bash
+  git branch -D branch_name
+```
+If we want to see last commit for all the branchs than run
+
+```bash
+  git branch -v
+```
+If we want to connect a branch with master branch or one branch to another branch than run
+
+```bash
+  git merge brance name
+```

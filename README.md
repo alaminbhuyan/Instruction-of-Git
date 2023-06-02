@@ -117,9 +117,9 @@ If you want unstag from staged then run
 ```bash
 git restore --staged "file_name"
 ```
-## git commit command
+## git commit & uncommit command
 
-If you want to commit for particular change to track run
+Move the file to local repository from stagging area
 
 ```bash
   git commit -m "Your message"
@@ -129,6 +129,29 @@ If you want to add and commit together then run
 
 ```bash
   git commit -am "Commit message"
+```
+## Uncommit
+If all you want to do is undo the act of committing, leaving everything else intact, run
+```bash
+   git reset --soft HEAD^
+```
+If we want to delete 'n' number of commit then run
+```bash
+   git reset --soft HEAD-num
+   Ex: git reset --soft HEAD-3
+```
+If all you want to do is undo the act of committing, and also removing from the stagging area then run
+```bash
+   git reset HEAD^
+```
+And if you actually want to completely undo it, throwing away all uncommitted changes, resetting everything to the previous commit then run
+```bash
+   git reset --hard HEAD^
+```
+
+## Go back to previous commit
+```bash
+   git checkout commit_hash_id
 ```
 
 ## git log command
@@ -184,7 +207,7 @@ If we want compare two commit than run
   git diff hash_id_of_first_commit hash_id_of_second_commit
 ```
 
-## git diff command
+## git show command
 
 If we want to see the all changes under a commit than run
 
@@ -249,6 +272,17 @@ If we want to see last commit for all the branchs than run
 ```bash
   git branch -v
 ```
+If we want to see list all remote branches
+
+```bash
+  git branch -r
+```
+If we want to see list all local & remote branches
+
+```bash
+  git branch -a
+```
+
 If we want to connect a branch with master branch or one branch to another branch than run
 
 ```bash
@@ -264,9 +298,9 @@ If we want to delete any branch from GitHub then run
   git push origin --d branch_name
 ```
 ## Git branch practice link
-```bash
-   http://git-school.github.io/visualizing-git/
-```
+
+[Click Here](http://git-school.github.io/visualizing-git/)
+
 ## git pull command
 
 If you change anything on GitHub and you want to fetch those change in your local machine then run
@@ -297,16 +331,20 @@ If you want to push any change or repository then run
 
 ```bash
    git push origin branch_name
+   or
+   git push -u origin branch_name
+```
+If you want to push all branch then run
+
+```bash
+   git push --all
 ```
 If you want to see git remote link then run
 
 ```bash
    git remote -v
 ```
-## Go back to previous commit
-```bash
-   git git checkout commit_hash_id
-```
+
 ## git --pretty=format command
 
 In Git, you can use the --pretty=format option to specify the output format for various Git commands, such as git log or git show. This option allows you to customize the output and display the information in a specific format.

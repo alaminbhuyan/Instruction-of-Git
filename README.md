@@ -263,6 +263,10 @@ If we want to delete any branch from GitHub then run
 
   git push origin --d branch_name
 ```
+## Git branch practice link
+```bash
+   http://git-school.github.io/visualizing-git/
+```
 ## git pull command
 
 If you change anything on GitHub and you want to fetch those change in your local machine then run

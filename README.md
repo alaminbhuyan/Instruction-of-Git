@@ -22,7 +22,7 @@
 
 ## Screenshots
 
-![App Screenshot]()
+![App Screenshot](https://github.com/alaminbhuyan/Instruction-of-Git/blob/main/Images/ssh.jpg)
 
 
 ## Installation
@@ -117,6 +117,8 @@ You can also use directory wildcard and directory and subdirectory wildcard
 If you want unstag from staged then run
 ```bash
 git restore --staged "file_name"
+or
+git rm --cached fileName
 ```
 ## git commit & uncommit command
 
@@ -149,10 +151,19 @@ And if you actually want to completely undo it, throwing away all uncommitted ch
 ```bash
    git reset --hard HEAD^
 ```
+![App Screenshot](https://github.com/alaminbhuyan/Instruction-of-Git/blob/main/Images/git-level.png)
 
-## Go back to previous commit
+## git HEAD and undo theory
+If you want to go back a particular previous commit
 ```bash
    git checkout commit_hash_id
+   or
+   git checkout HEAD-NUM
+   EX: git checkout HEAD-3 (that means I want to back in third number commit)
+```
+If you want to go back a particular previous commit and then If we want to back at the last commit then run
+```bash
+   git checkout master or main
 ```
 
 ## git log command
@@ -177,7 +188,7 @@ If you want to see a particuler number of commit then run
 
 ## Screenshots
 
-![App Screenshot]()
+![App Screenshot](https://github.com/alaminbhuyan/Instruction-of-Git/blob/main/Images/gitLog.jpg)
 
 ## git diff command
 
@@ -257,12 +268,6 @@ To create a branch and go that branch at once run
 ```bash
   git checkout -b branch_name
 ```
-To delete a branch run
-
-```bash
-  git branch -D branch_name
-```
-
 To delete a branch run
 
 ```bash

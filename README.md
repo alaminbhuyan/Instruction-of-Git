@@ -144,6 +144,13 @@ If you want to see all the commit that you have done till in short way then run.
 ```bash
   git log --oneline
 ```
+If you want to see a particuler number of commit then run
+
+```bash
+  git log -num
+  Ex: git log -3
+```
+
 ## Screenshots
 
 ![App Screenshot]()
@@ -186,6 +193,12 @@ If we want to see the all changes under a commit than run
 ```
 
 ## git delete or remove files and folder
+
+if you want to delete .git folder then run
+
+```bash
+  rm -rf .git
+```
 
 To delete or remove file thne run
 
@@ -240,4 +253,49 @@ If we want to connect a branch with master branch or one branch to another branc
 
 ```bash
   git merge brance_name
+```
+If we want to delete any branch from GitHub then run
+
+```bash
+  git push origin --delete branch_name
+
+  or
+
+  git push origin --d branch_name
+```
+## git pull command
+
+If you change anything on GitHub and you want to fetch those change in your local machine then run
+
+```bash
+  git pull
+
+  or,
+
+  git pull origin master or main
+```
+## git clone command
+
+If you want to clone any repository then copy the repository link and open terminal then run
+
+```bash
+   git clone repository_link 
+```
+If you want to give new name of the project that you are going to download in your local machine then run
+
+```bash
+   git clone repository_link new_project_name
+```
+
+## git push command
+
+If you want to push any change or repository then run
+
+```bash
+   git push origin branch_name
+```
+If you want to see git remote link then run
+
+```bash
+   git remote -v
 ```
